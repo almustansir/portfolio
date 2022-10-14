@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillFacebook, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import samit from "../public/pfp.jpeg";
+import samit from "../public/pfp.jpg";
 import code from "../public/code.png";
 import design from "../public/design.png";
 import web1 from "../public/web1.png";
@@ -95,7 +95,7 @@ export default function Home() {
               <p className="py-1 text-gray-800">Vue.js</p>
               <p className="py-1 text-gray-800">Firebase</p>
               <p className="py-1 text-gray-800">SQL</p>
-              <p className="py-1 text-gray-800">Tailwind</p>
+              <p className="py-1 text-gray-800">Tailwind CSS</p>
             </div>
             <div className="text-center shadow-lg p-10 my-10 rounded-xl dark:bg-gray-300">
               <Image src={design} width={100} height={100} />
