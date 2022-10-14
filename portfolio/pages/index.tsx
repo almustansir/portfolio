@@ -65,7 +65,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className=" relative mx-auto rounded-full w-80 h-80 mt-20 overflow-hidden md:w-96 md:h-96">
+          <div className=" relative mx-auto rounded-full w-80 h-80 mt-15 overflow-hidden md:w-96 md:h-96">
             <Image src={samit} objectFit="cover" layout="fill" />
           </div>
         </section>
@@ -107,6 +107,7 @@ export default function Home() {
               </p>
               <h4 className="py-4 text-teal-600">Design tools I use:</h4>
               <p className="py-1 text-gray-800">Photoshop</p>
+              <p className="py-1 text-gray-800">Gimp</p>
               <p className="py-1 text-gray-800">Figma</p>
             </div>
           </div>
