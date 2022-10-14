@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
-        <title>Samit's Portfolio</title>
+        <title>Samit&apos;s Portfolio</title>
       </Head>
 
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
@@ -51,7 +51,7 @@ export default function Home() {
             <h3 className="text-2xl py-2 md:text-3xl dark:text-gray-300">Developer & Designer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-300">
               Freelancer providing services for programming and design content
-              needs. Join me below and let's build something awesome!
+              needs. Join me below and let&apos;s build something awesome!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-300">
               <a href="https://www.linkedin.com/in/al-mustansir-samit-789464134">
