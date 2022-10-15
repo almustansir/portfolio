@@ -15,6 +15,7 @@ import { useState } from "react";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
+  const [onhover, setOnhover] = useState<boolean>(false)
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -51,7 +52,7 @@ export default function Home() {
             <h3 className="text-2xl py-2 md:text-3xl dark:text-gray-300">Developer & Designer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-300">
               Freelancer providing services for programming and design content
-              needs. Join me below and let's build something awesome!
+              needs. Join me below and let&apos;s build something awesome!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-300">
               <a href="https://www.linkedin.com/in/al-mustansir-samit-789464134">
@@ -117,23 +118,45 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-gray-300">Portfolio</h3>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                src={web1}
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
+            <div className="relative basis-1/3 flex-1 ">
+              <div className="relative">
+                <Image
+                  className="rounded-lg object-cover hover:opacity-30"
+                  src={web1}
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  onMouseEnter={() => setOnhover(true)}
+                  onMouseLeave={() => setOnhover(false)}
+                />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+                <a
+                  className=" flex bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md mb-5"
+                  href="#"
+                >
+                  Visit Website
+                </a>
+                <a
+                  className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md"
+                  href="#"
+                >
+                  Resume
+                </a>
+                </div>
+                {/* <p className=" absolute top-50">hover</p> */}
+              </div>
             </div>
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                src={web2}
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
+            <div className="basis-1/3 flex-1">
+              <div className="relative">
+                <Image
+                  className="rounded-lg object-cover"
+                  src={web2}
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+                <p className="absolute text-5xl text-black top-1/2 left-1/2">hover</p>
+              </div>
             </div>
             <div className="basis-1/3 flex-1 ">
               <Image
@@ -176,4 +199,5 @@ export default function Home() {
       </main>
     </div>
   );
+  
 }
