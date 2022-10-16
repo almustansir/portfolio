@@ -15,10 +15,10 @@ import { useState } from "react";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
-  const [onhover, setOnhover] = useState<boolean>(false)
+  const [onhover, setOnhover] = useState<boolean>(true);
 
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div className={darkMode ? "dark" : "" && onhover ? "" : ""}>
       <Head>
         <title>Samit's Portfolio</title>
       </Head>
@@ -49,7 +49,9 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
               Al Mustansir Samit
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl dark:text-gray-300">Developer & Designer</h3>
+            <h3 className="text-2xl py-2 md:text-3xl dark:text-gray-300">
+              Developer & Designer
+            </h3>
             <p className="text-md py-2 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-300">
               Freelancer providing services for programming and design content
               needs. Join me below and let&apos;s build something awesome!
@@ -73,7 +75,9 @@ export default function Home() {
 
         <section className="dark:text-gray">
           <div>
-            <h3 className="text-3xl py-1 dark:text-gray-300">Services I offer</h3>
+            <h3 className="text-3xl py-1 dark:text-gray-300">
+              Services I offer
+            </h3>
             <p className="dark:text-gray-300">
               I am available to do remote work for{" "}
               <span className=" text-teal-500">NEXT.js</span>,{" "}
@@ -100,9 +104,7 @@ export default function Home() {
             </div>
             <div className="text-center shadow-lg p-10 my-10 rounded-xl dark:bg-gray-300">
               <Image src={design} width={100} height={100} />
-              <h3 className=" text-lg font-medium pt-8 pb-2">
-                Designs
-              </h3>
+              <h3 className=" text-lg font-medium pt-8 pb-2">Designs</h3>
               <p className="py-2">
                 Making elegant designs suited for your design theory
               </p>
@@ -117,87 +119,94 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-gray-300">Portfolio</h3>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="relative basis-1/3 flex-1 ">
-              <div className="relative">
-                <Image
-                  className="rounded-lg object-cover hover:opacity-30"
-                  src={web1}
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                  onMouseEnter={() => setOnhover(true)}
-                  onMouseLeave={() => setOnhover(false)}
-                />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-                <a
-                  className=" flex bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md mb-5"
-                  href="#"
-                >
-                  Visit Website
-                </a>
-                <a
-                  className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md"
-                  href="#"
-                >
-                  Resume
-                </a>
+          <div className={onhover ? "pHover" : ""}>
+            <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+              <div className="relative basis-1/3 flex-1 ">
+                <div className="relative">
+                  <Image
+                    className="rounded-lg object-cover pHover:opacity-30"
+                    src={web1}
+                    width={"100%"}
+                    height={"100%"}
+                    layout="responsive"
+                    onMouseEnter={() => setOnhover(!onhover)}
+                    onMouseLeave={() => setOnhover(!onhover)}
+                  />
+                  {onhover && (
+                    <div
+                      className="block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center"
+                    >
+                      <a
+                        className="flex bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md mb-5"
+                        href="#"
+                      >
+                        Visit Website
+                      </a>
+                      <a
+                        className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md"
+                        href="#"
+                      >
+                        Resume
+                      </a>
+                    </div>
+                  )}
+                  {/* <p className=" absolute top-50">hover</p> */}
                 </div>
-                {/* <p className=" absolute top-50">hover</p> */}
               </div>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <div className="relative">
+              <div className="basis-1/3 flex-1">
+                <div className="relative">
+                  <Image
+                    className="rounded-lg object-cover"
+                    src={web2}
+                    width={"100%"}
+                    height={"100%"}
+                    layout="responsive"
+                  />
+                  <p className="absolute text-5xl text-black top-1/2 left-1/2">
+                    hover
+                  </p>
+                </div>
+              </div>
+              <div className="basis-1/3 flex-1 ">
                 <Image
                   className="rounded-lg object-cover"
-                  src={web2}
+                  src={web3}
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
                 />
-                <p className="absolute text-5xl text-black top-1/2 left-1/2">hover</p>
               </div>
-            </div>
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                src={web3}
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                src={web4}
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                src={web5}
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                src={web6}
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
+              <div className="basis-1/3 flex-1 ">
+                <Image
+                  className="rounded-lg object-cover"
+                  src={web4}
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </div>
+              <div className="basis-1/3 flex-1 ">
+                <Image
+                  className="rounded-lg object-cover"
+                  src={web5}
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </div>
+              <div className="basis-1/3 flex-1 ">
+                <Image
+                  className="rounded-lg object-cover"
+                  src={web6}
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </div>
             </div>
           </div>
         </section>
       </main>
     </div>
   );
-  
 }
