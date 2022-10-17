@@ -1,2 +1,2 @@
 # portfolio
-Just my personal portfolio.(In Progress)
+Just my personal portfolio
