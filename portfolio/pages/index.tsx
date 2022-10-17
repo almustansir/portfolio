@@ -164,13 +164,13 @@ export default function Home() {
                 <div className="portfolio_overlay_button">
                   <a
                     className="flex bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md mb-5"
-                    href="https://portfolio-almustansir.vercel.app/" target="_blank" rel="noopener noreferrer"
+                    href="https://portfolio-almustansir.vercel.app/"
                   >
                     Visit Website
                   </a>
                   <a
                     className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md"
-                    href="https://github.com/almustansir/portfolio" target="_blank" rel="noopener noreferrer"
+                    href="https://github.com/almustansir/portfolio"
                   >
                     Checkout Git
                   </a>
