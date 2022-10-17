@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillFacebook, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import samit from "../public/pfp.jpg";
+import samit from "../public/pfp.jpeg";
 import code from "../public/code.png";
 import design from "../public/design.png";
 import web1 from "../public/web1.png";
@@ -63,8 +63,8 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className=" relative mx-auto rounded-full w-80 h-80 mt-15 overflow-hidden md:w-96 md:h-96">
-            <Image src={samit} objectFit="cover" layout="fill" />
+          <div className=" relative mx-auto rounded-full w-80 h-80 mt-15 overflow-hidden md:w-96 md:h-96 bg-gradient-to-r from-cyan-500 to-teal-500">
+            <Image src={samit} objectFit="contain" layout="fill" />
           </div>
         </section>
 
