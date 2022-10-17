@@ -6,13 +6,7 @@ import samit from "../public/pfp.jpg";
 import code from "../public/code.png";
 import design from "../public/design.png";
 import web1 from "../public/web1.png";
-import netflixCloneImg from "../public/netflixClone.png";
-import portfolioImg from "../public/portfolioImg.png";
 import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
 import { useState } from "react";
 
 export default function Home() {
@@ -128,7 +122,7 @@ export default function Home() {
               <div className="portfolio_img_container">
                 <Image
                   className="absolute rounded-lg object-cover"
-                  src={netflixCloneImg}
+                  src={web1}
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
@@ -155,7 +149,7 @@ export default function Home() {
               <div className="portfolio_img_container">
                 <Image
                   className="absolute rounded-lg object-cover"
-                  src={portfolioImg}
+                  src={web2}
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
