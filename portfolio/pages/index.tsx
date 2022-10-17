@@ -6,6 +6,8 @@ import samit from "../public/pfp.jpg";
 import code from "../public/code.png";
 import design from "../public/design.png";
 import web1 from "../public/web1.png";
+import netflixCloneImg from "../public/netflixClone.png";
+import portfolioImg from "../public/portfolioImg.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
@@ -15,10 +17,9 @@ import { useState } from "react";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
-  const [onhover, setOnhover] = useState<boolean>(true);
 
   return (
-    <div className={darkMode ? "dark" : "" && onhover ? "" : ""}>
+    <div className={darkMode ? "dark" : ""}>
       <Head>
         <title>Samit's Portfolio</title>
       </Head>
@@ -82,9 +83,10 @@ export default function Home() {
               I am available to do remote work for{" "}
               <span className=" text-teal-500">NEXT.js</span>,{" "}
               <span className=" text-teal-500">Vue.js</span>,{" "}
+              <span className=" text-teal-500">Typescript</span>,{" "}
               <span className=" text-teal-500">Firebase</span> and{" "}
               <span className=" text-teal-500">SQL</span>. I can design UI on{" "}
-              <span className=" text-teal-500">figma</span>. I can offer a whide
+              <span className=" text-teal-500">Figma</span>. I can offer a whide
               range of services depending on requirement.
             </p>
           </div>
@@ -95,9 +97,10 @@ export default function Home() {
               <p className="py-2">
                 Developing systems according to your needs/
               </p>
-              <h4 className="py-4 text-teal-600">Design tools I use:</h4>
+              <h4 className="py-4 text-teal-600">Development tools I use:</h4>
               <p className="py-1 text-gray-800">Next.js</p>
               <p className="py-1 text-gray-800">Vue.js</p>
+              <p className="py-1 text-gray-800">Typescript</p>
               <p className="py-1 text-gray-800">Firebase</p>
               <p className="py-1 text-gray-800">SQL</p>
               <p className="py-1 text-gray-800">Tailwind CSS</p>
@@ -119,89 +122,59 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-gray-300">Portfolio</h3>
           </div>
-          <div className={onhover ? "pHover" : ""}>
-            <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-              <div className="relative basis-1/3 flex-1 ">
-                <div className="relative">
-                  <Image
-                    className="rounded-lg object-cover pHover:opacity-30"
-                    src={web1}
-                    width={"100%"}
-                    height={"100%"}
-                    layout="responsive"
-                    onMouseEnter={() => setOnhover(!onhover)}
-                    onMouseLeave={() => setOnhover(!onhover)}
-                  />
-                  {onhover && (
-                    <div
-                      className="block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center"
-                    >
-                      <a
-                        className="flex bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md mb-5"
-                        href="#"
-                      >
-                        Visit Website
-                      </a>
-                      <a
-                        className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md"
-                        href="#"
-                      >
-                        Resume
-                      </a>
-                    </div>
-                  )}
-                  {/* <p className=" absolute top-50">hover</p> */}
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            {/* portfolios are added here */}
+            <div className="relative basis-1/3 flex-1 ">
+              <div className="portfolio_img_container">
+                <Image
+                  className="absolute rounded-lg object-cover"
+                  src={netflixCloneImg}
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+                <div className="portfolio_img_overlay"></div>
+                <div className="portfolio_overlay_button">
+                  <a
+                    className="flex bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md mb-5"
+                    href="https://nextjs-netflix-clone-netflix-clone-u6m1.vercel.app/" target="_blank"
+                  >
+                    Visit Website
+                  </a>
+                  <a
+                    className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md"
+                    href="https://github.com/almustansir/nextjs-netflix-clone" target="_blank"
+                  >
+                    Checkout Git
+                  </a>
                 </div>
               </div>
-              <div className="basis-1/3 flex-1">
-                <div className="relative">
-                  <Image
-                    className="rounded-lg object-cover"
-                    src={web2}
-                    width={"100%"}
-                    height={"100%"}
-                    layout="responsive"
-                  />
-                  <p className="absolute text-5xl text-black top-1/2 left-1/2">
-                    hover
-                  </p>
+            </div>
+            {/* portfolios are added here */}
+            <div className="relative basis-1/3 flex-1 ">
+              <div className="portfolio_img_container">
+                <Image
+                  className="absolute rounded-lg object-cover"
+                  src={portfolioImg}
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+                <div className="portfolio_img_overlay"></div>
+                <div className="portfolio_overlay_button">
+                  <a
+                    className="flex bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md mb-5"
+                    href="https://portfolio-almustansir.vercel.app/" target="_blank"
+                  >
+                    Visit Website
+                  </a>
+                  <a
+                    className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md"
+                    href="https://github.com/almustansir/portfolio" target="_blank"
+                  >
+                    Checkout Git
+                  </a>
                 </div>
-              </div>
-              <div className="basis-1/3 flex-1 ">
-                <Image
-                  className="rounded-lg object-cover"
-                  src={web3}
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                />
-              </div>
-              <div className="basis-1/3 flex-1 ">
-                <Image
-                  className="rounded-lg object-cover"
-                  src={web4}
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                />
-              </div>
-              <div className="basis-1/3 flex-1 ">
-                <Image
-                  className="rounded-lg object-cover"
-                  src={web5}
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                />
-              </div>
-              <div className="basis-1/3 flex-1 ">
-                <Image
-                  className="rounded-lg object-cover"
-                  src={web6}
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                />
               </div>
             </div>
           </div>

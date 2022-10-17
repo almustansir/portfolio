@@ -6,3 +6,36 @@
   font-family: "burtons";
   src: url('../public//Burtons.otf');
 }
+
+@layer components {
+  .portfolio_img_container {
+    position: relative;
+  }
+  .portfolio_img_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+  }
+
+  .portfolio_img_container:hover .portfolio_img_overlay {
+    display: block;
+    background: rgba(0, 0, 0, .3);
+  }
+
+  .portfolio_overlay_button {
+    position: absolute;
+    left:35%;
+    top: 40%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+  }
+
+  .portfolio_img_container:hover .portfolio_overlay_button {
+    opacity: 1;
+  }
+}
