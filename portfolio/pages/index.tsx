@@ -90,7 +90,7 @@ export default function Home() {
               <p className="py-2">
                 Developing systems according to your needs/
               </p>
-              <h4 className="py-4 text-teal-600">Design tools I use:</h4>
+              <h4 className="py-4 text-teal-600">Development tools I use:</h4>
               <p className="py-1 text-gray-800">Next.js</p>
               <p className="py-1 text-gray-800">Vue.js</p>
               <p className="py-1 text-gray-800">Firebase</p>
