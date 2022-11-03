@@ -27,11 +27,7 @@
   }
 
   .portfolio_overlay_button {
-    position: absolute;
-    left:35%;
-    top: 40%;
-    text-align: center;
-    opacity: 0;
+    @apply absolute left-[35%] lg:left-[45%] top-[45%] md:left-[40%]  text-center opacity-0;
     transition: opacity .35s ease;
   }
 
