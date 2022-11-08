@@ -7,6 +7,7 @@ import code from "../public/code.png";
 import design from "../public/design.png";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
+import web3 from "../public/web3.png";
 import { useState } from "react";
 
 export default function Home() {
@@ -138,6 +139,33 @@ export default function Home() {
                   <a
                     className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md"
                     href="https://github.com/almustansir/nextjs-netflix-clone"
+                  >
+                    Checkout Git
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* portfolios are added here */}
+            <div className="relative basis-1/3 flex-1 ">
+              <div className="portfolio_img_container">
+                <Image
+                  className="absolute rounded-lg object-cover"
+                  src={web3}
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+                <div className="portfolio_img_overlay"></div>
+                <div className="portfolio_overlay_button">
+                  <a
+                    className="flex bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md mb-5"
+                    href="https://todoapp-beta-rust.vercel.app/"
+                  >
+                    Visit Website
+                  </a>
+                  <a
+                    className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md"
+                    href="https://github.com/almustansir/TodoApp"
                   >
                     Checkout Git
                   </a>
