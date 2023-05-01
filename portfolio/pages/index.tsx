@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillFacebook, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import samit from "../public/pfp.jpeg";
+import samit from "../public/pfp.jpg";
 import code from "../public/code.png";
 import design from "../public/design.png";
 import web1 from "../public/web1.png";
