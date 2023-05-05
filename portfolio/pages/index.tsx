@@ -8,6 +8,7 @@ import design from "../public/design.png";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
+import web4 from "../public/web4.png";
 import { useState } from "react";
 
 export default function Home() {
@@ -119,6 +120,33 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-gray-300">Portfolio</h3>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            {/* portfolios are added here */}
+            <div className="relative basis-1/3 flex-1 ">
+              <div className="portfolio_img_container">
+                <Image
+                  className="absolute rounded-lg object-cover"
+                  src={web4}
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+                <div className="portfolio_img_overlay"></div>
+                <div className="portfolio_overlay_button">
+                  <a
+                    className="flex bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md mb-5"
+                    href="https://warm-sawine-2cb8ec.netlify.app/"
+                  >
+                    Visit Website
+                  </a>
+                  <a
+                    className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md"
+                    href="https://github.com/almustansir/youtube-clone"
+                  >
+                    Checkout Git
+                  </a>
+                </div>
+              </div>
+            </div>
             {/* portfolios are added here */}
             <div className="relative basis-1/3 flex-1 ">
               <div className="portfolio_img_container">
