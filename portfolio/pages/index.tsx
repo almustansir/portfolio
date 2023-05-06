@@ -120,7 +120,7 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-gray-300">Portfolio</h3>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            {/* portfolios are added here */}
+            {/* portfolios are added here web4*/}
             <div className="relative basis-1/3 flex-1 ">
               <div className="portfolio_img_container">
                 <Image
