@@ -91,7 +91,7 @@ export default function Home() {
               <Image src={code} width={100} height={100} />
               <h3 className=" text-lg font-medium pt-8 pb-2">Code</h3>
               <p className="py-2">
-                Developing systems according to your needs/
+                Developing systems according to your needs
               </p>
               <h4 className="py-4 text-teal-600">Development tools I use:</h4>
               <p className="py-1 text-gray-800">Next.js</p>
