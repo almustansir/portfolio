@@ -29,6 +29,7 @@ const PortfolioMainComp: React.FC<Props> = ({
         <div className="portfolio_overlay_button">
           <a
             target="_blank"
+            rel="noreferrer"
             className="flex bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md mb-5"
             href={WebsiteLink}
           >
@@ -36,6 +37,7 @@ const PortfolioMainComp: React.FC<Props> = ({
           </a>
           <a
             target="_blank"
+            rel="noreferrer"
             className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md"
             href={GithubLink}
           >
