@@ -120,21 +120,25 @@ export default function Home() {
               imageLink="/../public/ytclone.png"
               WebsiteLink="https://warm-sawine-2cb8ec.netlify.app/"
               GithubLink="https://github.com/almustansir/youtube-clone"
+              imgAlt="ytclone"
             />
             <PortfolioMainComp
               imageLink="/../public/netflixCloneImg.png"
               WebsiteLink="https://nextjs-netflix-clone-netflix-clone-u6m1.vercel.app/"
               GithubLink="https://github.com/almustansir/nextjs-netflix-clone"
+              imgAlt="netflixCloneImg"
             />
             <PortfolioMainComp
               imageLink="/../public/todoWebImage.png"
               WebsiteLink="https://todoapp-beta-rust.vercel.app/"
               GithubLink="https://github.com/almustansir/TodoApp"
+              imgAlt="todoWebImage"
             />
             <PortfolioMainComp
               imageLink="/../public/portfolioPageImg.png"
               WebsiteLink="https://portfolio-almustansir.vercel.app/"
               GithubLink="https://github.com/almustansir/portfolio"
+              imgAlt="portfolioPageImg"
             />
           </div>
         </section>

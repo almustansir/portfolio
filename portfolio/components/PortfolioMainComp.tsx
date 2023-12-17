@@ -5,12 +5,14 @@ interface Props {
   imageLink: string;
   WebsiteLink: string;
   GithubLink: string;
+  imgAlt: string;
 }
 
 const PortfolioMainComp: React.FC<Props> = ({
   imageLink,
   WebsiteLink,
   GithubLink,
+  imgAlt,
 }) => {
   return (
     <div className="relative basis-1/3 flex-1 ">
@@ -21,6 +23,7 @@ const PortfolioMainComp: React.FC<Props> = ({
           width={"100%"}
           height={"100%"}
           layout="responsive"
+          alt={imgAlt}
         />
         <div className="portfolio_img_overlay"></div>
         <div className="portfolio_overlay_button">
