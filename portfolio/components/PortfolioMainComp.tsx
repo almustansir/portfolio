@@ -20,8 +20,8 @@ const PortfolioMainComp: React.FC<Props> = ({
         <Image
           className="absolute rounded-lg object-cover"
           src={imageLink}
-          width={"100%"}
-          height={"100%"}
+          width={"1200px"}
+          height={"800px"}
           layout="responsive"
           alt={imgAlt}
         />
