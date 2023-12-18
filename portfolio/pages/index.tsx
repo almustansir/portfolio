@@ -103,8 +103,8 @@ export default function Home() {
                 Making elegant designs suited for your design theory
               </p>
               <h4 className="py-4 text-teal-600">Design tools I use:</h4>
-              <p className="py-1 text-gray-800">Webflow</p>
               <p className="py-1 text-gray-800">Figma</p>
+              <p className="py-1 text-gray-800">Canva</p>
               <p className="py-1 text-gray-800">Photoshop</p>
               <p className="py-1 text-gray-800">Gimp</p>
             </div>
