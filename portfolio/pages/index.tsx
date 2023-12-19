@@ -52,13 +52,16 @@ export default function Home() {
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-300">
               {/* update links */}
-              <a href="https://www.linkedin.com/in/al-mustansir-samit-789464134">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/al-mustansir-samit-789464134"
+              >
                 <AiFillLinkedin />
               </a>
-              <a href="https://github.com/almustansir">
+              <a target="_blank" href="https://github.com/almustansir">
                 <AiFillGithub />
               </a>
-              <a href="https://www.facebook.com/al.mustansir">
+              <a target="_blank" href="https://www.facebook.com/al.mustansir">
                 <AiFillFacebook />
               </a>
             </div>
