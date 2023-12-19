@@ -54,14 +54,23 @@ export default function Home() {
               {/* update links */}
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://www.linkedin.com/in/al-mustansir-samit-789464134"
               >
                 <AiFillLinkedin />
               </a>
-              <a target="_blank" href="https://github.com/almustansir">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/almustansir"
+              >
                 <AiFillGithub />
               </a>
-              <a target="_blank" href="https://www.facebook.com/al.mustansir">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.facebook.com/al.mustansir"
+              >
                 <AiFillFacebook />
               </a>
             </div>
