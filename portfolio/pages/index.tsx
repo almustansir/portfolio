@@ -31,7 +31,7 @@ export default function Home() {
               <li>
                 <a
                   className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 px-4 rounded-md ml-8"
-                  // resume will be uploaded later
+                  // Update pdf resume
                   href="https://github.com/almustansir"
                 >
                   Resume
