@@ -130,6 +130,12 @@ export default function Home() {
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             {/* portfolios are added here web4*/}
             <PortfolioMainComp
+              imageLink="/world-clack-mockup1.png"
+              WebsiteLink="https://world-clock-amber-three.vercel.app"
+              GithubLink="https://github.com/almustansir/world-clock"
+              imgAlt="worldclack"
+            />
+            <PortfolioMainComp
               imageLink="/ytCloneImg.png"
               WebsiteLink="https://warm-sawine-2cb8ec.netlify.app/"
               GithubLink="https://github.com/almustansir/youtube-clone"
@@ -146,12 +152,6 @@ export default function Home() {
               WebsiteLink="https://nextjs-netflix-clone-netflix-clone-u6m1.vercel.app/"
               GithubLink="https://github.com/almustansir/nextjs-netflix-clone"
               imgAlt="netflixCloneImg"
-            />
-            <PortfolioMainComp
-              imageLink="/personalPortfolioImg.png"
-              WebsiteLink="https://portfolio-almustansir.vercel.app/"
-              GithubLink="https://github.com/almustansir/portfolio"
-              imgAlt="portfolioPageImg"
             />
           </div>
         </section>
