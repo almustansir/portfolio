@@ -155,8 +155,10 @@ export default function Home() {
             />
           </div>
         </section>
-        {/* Add footer section */}
       </main>
+      <footer className="bg-white px-10 md:px-20 lg:px-40 mt-16 dark:bg-gray-900" >
+          <em classname= "text-sm">Work in progress.</em>
+      </footer>
     </div>
   );
 }
