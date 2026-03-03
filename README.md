@@ -6,4 +6,8 @@ This only contains my public projects.
   🔗 <b>Url:</b> https://www.samit.me
 </a>
 
+---
+
 *work in progress*
+
+**Next update after 4 complete public projects in portfolio.**
