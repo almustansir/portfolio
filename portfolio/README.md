@@ -1,3 +1,7 @@
+## Personal Portfolio
+
+This is my first portfolio. I am currently working on some updates on some of my projects, and desiging a overhaul and update to the portfolio.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
