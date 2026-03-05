@@ -136,16 +136,16 @@ export default function Home() {
               imgAlt="worldclack"
             />
             <PortfolioMainComp
+              imageLink="/todoImgv2.png"
+              WebsiteLink="https://todoapp-v2-red.vercel.app"
+              GithubLink="https://github.com/almustansir/todoapp-v2"
+              imgAlt="todoWebImage"
+            />
+            <PortfolioMainComp
               imageLink="/ytCloneImg.png"
               WebsiteLink="https://warm-sawine-2cb8ec.netlify.app/"
               GithubLink="https://github.com/almustansir/youtube-clone"
               imgAlt="ytclone"
-            />
-            <PortfolioMainComp
-              imageLink="/todoImg.png"
-              WebsiteLink="https://todoapp-beta-rust.vercel.app/"
-              GithubLink="https://github.com/almustansir/TodoApp"
-              imgAlt="todoWebImage"
             />
             <PortfolioMainComp
               imageLink="/NetFlixCloneSite.png"
