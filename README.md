@@ -8,6 +8,4 @@ This only contains my public projects.
 
 ---
 
-*work in progress*
-
 **Next update after 4 complete public projects in portfolio.**
